@@ -663,6 +663,7 @@ input PoolHourDataWhereInput {
 }
 
 type Query {
+  pool(id: ID!): Pool
   poolHourDatas(
     first: Int!,
     where: PoolHourDataWhereInput!
